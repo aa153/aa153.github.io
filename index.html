@@ -24,9 +24,13 @@ title: Perl developer resume
 
 <!--
 
-To change the configuration of i3, copy /etc/i3/config to ~/.i3/config
 
-Then add to ~/.i3/config 
+To change the configuration of i3, copy /etc/i3/config to ~/.i3/config if there is no ./cinfig/i3/config
+Then add to config:
+
+
+# use rofi instead dmenu
+bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 300 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 14"
 
 # keyboard layout
 exec --no-startup-id setxkbmap -layout "us,ru" -option "grp:alt_shift_toggle"
